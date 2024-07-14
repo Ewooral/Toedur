@@ -1,3 +1,6 @@
+import { HomePageProps } from "@/app/types/homepage";
+
+
 import React from "react";
 
 export const Main_Two = (props: HomePageProps) => {
