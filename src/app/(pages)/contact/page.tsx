@@ -12,7 +12,7 @@ import { useMediaQuery } from "react-responsive";
 import { data, paragraphs } from "@/app/data";
 import { MotionDiv } from "@/app/ components/framer-motion/ImportFramerMotionOnce";
 
-const Contact_Default = (props: HomePageProps) => {
+const Contact_Default = () => {
   const { theme } = useLocaleStore();
   const isClient = useIsClient();
   const isLessThanCustomBreakpointPartTwo = useMediaQuery({

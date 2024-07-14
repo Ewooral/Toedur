@@ -1,18 +1,15 @@
 "use client";
-import { FormattedMessage } from "react-intl";
-import { ToedurImageCard } from "@/app/ components/cards/ImageCard";
-import Image from "next/image";
+
+
 import React from "react";
-import { HomePageProps } from "@/app/types/homepage";
 import useLocaleStore from "@/app/store/locale";
 import clsx from "clsx";
 import variables from "@/app/styles/variables.module.scss";
 import { useIsClient } from "@/app/hooks/useIsClient";
 import { useMediaQuery } from "react-responsive";
-import { data, paragraphs } from "@/app/data";
 import { MotionDiv } from "@/app/ components/framer-motion/ImportFramerMotionOnce";
 
-const About_Default = (props: HomePageProps) => {
+const About_Default = () => {
   const { theme } = useLocaleStore();
   const isClient = useIsClient();
   const isLessThanCustomBreakpointPartTwo = useMediaQuery({
