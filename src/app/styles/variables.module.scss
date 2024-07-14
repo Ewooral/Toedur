@@ -1,0 +1,89 @@
+// @use 'sass:map';
+// @use 'sass:meta';
+// @use 'sass:color';
+// @use 'sass:math';
+// @import './colors.module';
+
+
+$primary-color: #3b82f6;
+// $primary-colorA: #1360e2;
+$secondary-color: #ffc947;
+$toedur-yellow:#EEA21B;
+$find-your-edur-color: #000000;
+$tertiary-color: #1f1f1f;
+$deep-blue: #194791;
+$pure_white: #ffffff;
+$slightly_white: rgb(193, 189, 189);
+$toedur-primary-color:#1360e2;
+$todeur-secondary-color:#81a8e9;
+
+
+
+
+@function get-edur-color() {
+  @return $find-your-edur-color;
+}
+
+// @function get-primary-colorA() {
+//   @return $primary-colorA;
+// }
+
+@function get-tertiary-color() {
+  @return $tertiary-color;
+}
+
+@function get-secondary-color() {
+  @return $secondary-color;
+}
+
+@function get-primary-color-rgb() {
+  @return $primary-color;
+}
+
+@function get-primary-color-adjust($value) {
+  @return color.adjust($primary-color, $value);
+}
+
+@function get-secondary-color-adjust($value) {
+  @return color.adjust($secondary-color, $value);
+}
+
+@function get-deep-blue-color(){
+  @return $deep-blue;
+}
+
+@function get-pure-white-color(){
+  @return $pure_white;
+}
+
+@function get-slightly-white-color(){
+  @return $slightly_white;
+}
+
+@function get-toedur-primary-color(){
+  @return $toedur-primary-color;
+}
+
+@function get-toedur-secondary-color(){
+  @return $todeur-secondary-color;
+}
+
+@function get-toedur-yellow-color(){
+  @return $toedur-yellow;
+}
+ 
+:export {
+  getFindEdurColor: get-edur-color();
+  getPrimaryColorRGB: get-primary-color-rgb();
+  getTertiaryColor: get-tertiary-color();
+  getDeepBlueColor: get-deep-blue-color();
+  getSecondaryColor: get-secondary-color();
+  getPureWhiteColor: get-pure-white-color();
+  getPrimaryColorA: get-primary-colorA();
+  getToedurPrimaryColor: get-toedur-primary-color();
+  getToedurSecondaryColor: get-toedur-secondary-color();
+  getToedurYellowColor: get-toedur-yellow-color();
+ 
+}
+
+
